@@ -1,12 +1,11 @@
 <html>
 <body>
   <h1>View Posts by User</h1>
-  <form action="ViewUserPostsBackend.php" method="post">
+  <form action="ViewUserPostsBack.php" method="post">
     Username:
     <select name="username">
 
 <?php
-// create database connection
 $mysqli = new mysqli("mysql.eecs.ku.edu", "s216k248", 'ioJies9e', "s216k248");
 // check connection
 if ($mysqli->connect_error) {

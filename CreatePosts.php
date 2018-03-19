@@ -25,8 +25,8 @@ else
   }
   else
   {
-    echo "Error in creating post: " . $mysqli->error . "<br>";
-    echo "Attempted query: " . $add_post_query;
+    echo "There was an error in creating the post, " . $mysqli->error . "<br>";
+    echo "Here was the attempted query, " . $add_post_query;
   }
 }
 $mysqli->close();

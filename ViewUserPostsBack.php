@@ -3,7 +3,6 @@
 
 <?php
 $username = $_POST["username"];
-// create database connection
 $mysqli = new mysqli("mysql.eecs.ku.edu", "s216k248", 'ioJies9e', "s216k248");
 // check connection
 if ($mysqli->connect_error) {
