@@ -7,7 +7,7 @@ $mysqli = new mysqli("mysql.eecs.ku.edu", "s216k248", 'ioJies9e', "s216k248");
 
 //check connection
 if ($mysqli->connect_error) {
-    die("Failed connection, " . $conn->connect_error);
+    die("Could not establish a connection, " . $conn->connect_error);
 }
 $check_user_exists_query = "SELECT * FROM Users WHERE user_id='" . $username . "';";
 $result = $mysqli->query($check_user_exists_query);
