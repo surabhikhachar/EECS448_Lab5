@@ -14,7 +14,7 @@ echo "<h1>Posts for {$username}</h1>";
 echo "<table>";
 while($post = $posts->fetch_assoc()) {
   $content = $post['content'];
-  $user_id = $post['user_id'];
+  $user_id = $post['author_id'];
   echo "<tr><td>{$content}</td></tr>";
 }
 echo "</table>";
