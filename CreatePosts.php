@@ -18,7 +18,7 @@ if(mysqli_num_rows($result) == 0)
 }
 else
 {
-  $add_post_query = "INSERT INTO Posts (content, user_id) VALUES ('{$post}','{$username}');";
+  $add_post_query = "INSERT INTO Posts (content, author_id) VALUES ('{$post}','{$username}');";
   if($post_result = $mysqli->query($add_post_query))
   {
     echo "Post successfully created.";
